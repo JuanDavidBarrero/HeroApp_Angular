@@ -1,5 +1,5 @@
 <mat-card>
-    
+
     <mat-card-header>
         <mat-card-title>{{heroe.superhero}}</mat-card-title>
         <mat-card-subtitle>{{heroe.alter_ego}}</mat-card-subtitle>
@@ -17,8 +17,8 @@
     </mat-card-content>
 
     <mat-card-actions>
-        <button mat-raised-button color="warn">Leer más...</button>
-        <button mat-raised-button color="primary">Editar</button>
+        <button mat-raised-button color="warn" [routerLink]="['/heroes',heroe.id]">Leer más...</button>
+        <button mat-raised-button color="primary" [routerLink]="['/heroes/editar',heroe.id]">Editar</button>
     </mat-card-actions>
 
 </mat-card>
