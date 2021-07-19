@@ -8,7 +8,7 @@ export class ImagenesPipe implements PipeTransform {
 
   transform(heroe: Heroe): String {
 
-    if (!heroe.id && heroe.alt_img) {
+    if (!heroe.id && !heroe.alt_img) {
       return `assets/no-image.png`
     }
     else if (heroe.alt_img) {
